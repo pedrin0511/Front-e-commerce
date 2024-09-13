@@ -1,0 +1,41 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff; /* Cor de fundo da navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    text-align: center;
+}
+
+.nav img{
+    width: 5em;
+    margin: .5em;
+    border-radius: 0.5em;
+}
+
+.logar{
+    margin-right: 1em;
+    display: flex;
+    gap: 2em;
+}
+
+.logar a{
+    text-decoration: none;
+    color: #aaa;
+    transition: color 1s ease-in;
+}
+
+.logar a :hover{
+ color: #0077e7;
+}
+
+.registro{
+    display: grid;
+}
+
+.registro span{
+    font-size: 1.5em;
+}
+
