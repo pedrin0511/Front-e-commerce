@@ -1,0 +1,148 @@
+body{
+    background: linear-gradient(to right, #fd6b46, #f89b55);
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Desfoque para criar o efeito de vidro */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores antigos */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 500px; /* Largura máxima */
+    margin: auto; /* Centraliza o container */
+    color: #fff; /* Cor do texto */
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.voltar{
+    display: flex;
+}
+.voltar a{
+    font-size: 2em;
+    color: #fff;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+.voltar a:hover {
+    transform: rotate(360deg); /* Gira o link completamente ao passar o mouse */
+}
+
+.container img{
+    width: 6em;
+    border-radius: 1em;
+}
+
+.icon span{
+    font-size: 2em;
+    
+}
+
+.icon h2{
+    padding: 0;
+    margin: 0;
+}
+
+.container form{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+
+
+.input{
+    width: 15em;
+    display: flex;
+    border-bottom: 2px solid #fff;
+    height: 2em;
+}
+
+.input span{
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    margin-left: .2em;
+}
+
+.input input{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+.input input::placeholder{
+    color: #fff;
+}
+
+.input input:focus{
+    border: none;
+    outline: none;
+}
+
+.ver button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: .1em;
+    cursor: pointer;
+}
+
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrar button{
+    width: 15em;
+    height: 2.5em;
+    border-radius: .5em;
+    background-color: #f35e38;
+    border: none;
+    color: #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.entrar button:hover{
+    background-color: #a74228;
+}
+
+.container p {
+    font-size: 1.2em;
+} 
+
+
+
+  @media (max-width: 400px) {
+ 
+    
+    .entrar button{
+        width: 10em;
+        height: 2em;
+    }
+  
+    .container p {
+        font-size: 1em;
+    } 
+    .input{
+        width: 10em;
+        
+    }
+    
+    .input input{
+        font-size: 1em;
+        width: 9em;
+    }
+
+  }
