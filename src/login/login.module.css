@@ -123,26 +123,3 @@ body{
 } 
 
 
-
-  @media (max-width: 400px) {
- 
-    
-    .entrar button{
-        width: 10em;
-        height: 2em;
-    }
-  
-    .container p {
-        font-size: 1em;
-    } 
-    .input{
-        width: 10em;
-        
-    }
-    
-    .input input{
-        font-size: 1em;
-        width: 9em;
-    }
-
-  }
