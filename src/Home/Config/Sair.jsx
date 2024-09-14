@@ -10,7 +10,7 @@ export function Sair(){
         console.log("Usuário deslogado com sucesso");
         localStorage.removeItem('user');
         
-        window.location.href = "/login";
+        window.location.href = "/";
       })
       .catch((error) => {
         console.error("Erro ao deslogar:", error);

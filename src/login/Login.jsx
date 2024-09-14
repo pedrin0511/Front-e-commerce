@@ -2,14 +2,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { IoIosEyeOff, IoIosEye } from "react-icons/io";
-import { IoPerson } from "react-icons/io5";
 import { GiReturnArrow } from "react-icons/gi";
+import { MdEmail } from "react-icons/md";
 import styles from './login.module.css'
 function Login(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [type, settype] = useState('password')
     const [olhar,setolhar] = useState(false)
+    const [message,setmessage] = useState("")
+    const [messageType, setMessageType] = useState('');
     const navigate = useNavigate();
     const auth = getAuth()
    
@@ -26,9 +28,19 @@ function Login(){
                   displayName: user.displayName,
                 }));
                 
-                navigate("/")
+                setmessage('Sucesso!')
+                setMessageType('success')
+                setTimeout(()=>{
+                  setmessage("")
+                  navigate('/')
+                },1000)
+                
             }catch(error){
-                alert('error')
+                setmessage('Tente novamente!')
+                setMessageType('error')
+                setTimeout(()=>{
+                  setmessage("")
+                },5000)
             }
         }
     
@@ -49,19 +61,24 @@ function Login(){
     
     return(
         <div className={styles.container}>
-            <div className={styles.voltar}>
-                <Link to="/"><GiReturnArrow/></Link>
-            </div>
+            {message && (
+        <div className={`${styles.message} ${messageType === 'success' ? styles.success : styles.error}`}>
+          {message}
+        </div>
+      )}
+                <span className={styles.voltar}><Link to="/"><GiReturnArrow/></Link></span>
+            
             <div className={styles.icon}>
                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2UtNT8bHaNnYB3nZ4hq7mgIaN9d2brEM1WA&s" alt="" />
             </div>
+            <h2>Login</h2>
             <form onSubmit={Login}>
-
+            
             <div className={styles.input}>
-                <span><IoPerson/></span>
+                <span><MdEmail/></span>
                 <input 
                  type="email"
-                 placeholder="Digite seu email"
+                 placeholder="Email"
                  value={email}
                  required
                  onChange={(e) => setEmail(e.target.value)}

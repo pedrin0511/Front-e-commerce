@@ -13,17 +13,17 @@ body{
     width: 80%; /* Largura máxima */
     margin: auto; /* Centraliza o container */
     color: #fff; /* Cor do texto */
-    height: 85vh;
+    height: auto;
     margin-top: 2em;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .voltar{
     display: flex;
-    margin-top: 1em;
 }
 .voltar a{
     font-size: 2em;
@@ -51,7 +51,6 @@ body{
 }
 
 .container form{
-    margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,26 +124,26 @@ body{
 } 
 
 .message {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  /* Estilo para mensagens de sucesso */
-  .success {
-    color: #155724;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-  }
-  
-  /* Estilo para mensagens de erro */
-  .error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-  }
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilo para mensagens de sucesso */
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Estilo para mensagens de erro */
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
 
 @media (max-width: 470px) {
     .container{
