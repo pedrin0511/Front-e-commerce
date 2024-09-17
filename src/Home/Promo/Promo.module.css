@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    
+
+}
+
+.container img{
+    width: 100%;
+}
+
+.gifMobile{
+    display: none;
+}
+
+.gifPc{
+    display: block;
+}
+ @media(max-width: 500px){
+    .gifPc{
+        display: none;
+    }
+    .gifMobile{
+        display: block;
+    }
+ }
+ 

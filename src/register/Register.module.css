@@ -1,10 +1,10 @@
-body{
-    background: linear-gradient(to right, #fd6b46, #f89b55);
-}
+
+
+
 
 .container{
     background: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Desfoque para criar o efeito de vidro */
+    backdrop-filter: blur(13px); /* Desfoque para criar o efeito de vidro */
     -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores antigos */
     border-radius: 15px; /* Bordas arredondadas */
     border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
@@ -14,16 +14,23 @@ body{
     margin: auto; /* Centraliza o container */
     color: #fff; /* Cor do texto */
     height: auto;
-    margin-top: 2em;
+    margin-top: 1em;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 2em;
+   
 }
 
+.container a{
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
+}
 .voltar{
     display: flex;
+    position: absolute;
+    top: 1.3em;
 }
 .voltar a{
     font-size: 2em;
@@ -42,7 +49,6 @@ body{
 
 .icon span{
     font-size: 2em;
-    
 }
 
 .icon h2{
@@ -54,7 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 2.5em;
 }
 
 
@@ -129,6 +135,7 @@ body{
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
+  position: relative;
 }
 
 /* Estilo para mensagens de sucesso */
@@ -140,9 +147,9 @@ body{
 
 /* Estilo para mensagens de erro */
 .error {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
+  color: #da3535;
+  background-color: #f7f1f1;
+  border: 1px solid #fae5e7;
 }
 
 @media (max-width: 470px) {

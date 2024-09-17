@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Config } from "../Config/config";
+import { Config } from "../Confi/config";
 import styles from './Navbar.module.css'
 import { IoLogInOutline,IoPersonAdd } from "react-icons/io5";
+
+
 export function Navbar(){
 const [user , setUser] = useState(null)
 
@@ -20,8 +22,8 @@ const [user , setUser] = useState(null)
             {user ? (
                <nav className={styles.nav}>
                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2UtNT8bHaNnYB3nZ4hq7mgIaN9d2brEM1WA&s" alt="Logo marca" />
-                <div>
-                    <p>Olá, {user.displayName ? user.displayName : "Usuario"}</p>
+                <div className={styles.ola}>
+                    <p className={styles.p_ola}>Olá, <span>{user.displayName ? user.displayName : "Usuario"}</span></p>
                     <Config/>
                 
                 </div>

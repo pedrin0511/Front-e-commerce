@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import styles from './Register.module.css'
 import { IoIosEyeOff, IoIosEye, IoMdPerson } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import style from "../login/login.module.css"
 function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -69,6 +70,7 @@ function Register() {
 }
 
   return (
+    <div  className={style.body}>
     <div className={styles.container}>
       {message && (
         <div className={`${styles.message} ${messageType === 'success' ? styles.success : styles.error}`}>
@@ -118,11 +120,12 @@ function Register() {
             </div>
 
             <div className={styles.entrar}>
-                <button type="submit">Registrar</button>
+                <button type="submit">Registrar-se</button>
             </div>
        
         </form>
       <p>Caso já possua uma conta faça <Link to="/login">login!</Link></p>
+    </div>
     </div>
   );
 }

@@ -1,0 +1,37 @@
+.message{
+    position: absolute;
+    color: red;
+}
+.message button{
+    margin: 1em;
+    cursor: pointer;
+}
+
+.excluir{
+    background-color: rgb(253, 98, 98);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 6em;
+    transition: .3s linear;
+}
+.excluir:hover{
+    background-color: rgb(168, 5, 5);
+}
+
+.cancelar{
+    background-color: rgb(139, 236, 100);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    width: 6em;
+    transition: .3s linear;
+}
+.cancelar:hover{
+    background-color: rgb(57, 168, 5);
+}
+
+
+

@@ -1,0 +1,89 @@
+.button {
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   font-size: 2em;
+   color: #888;
+   
+}
+.config{
+    z-index: 11;
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    background-color: white;
+    color: #888;
+    background: rgb(255, 255, 255); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Desfoque para criar o efeito de vidro */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores antigos */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438); /* Sombra leve para dar profundidade */
+    padding: 20px;
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.overlay{
+    opacity: 0;
+    animation: fadeIn 0.7s forwards;
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.39); /* Fundo semi-transparente */
+  z-index: 10;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.title button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    color: #888;
+}
+
+
+.p{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: start;
+    height: 2em;
+    margin-top: 3em;
+    
+}
+
+.p a{
+    text-decoration: none;
+    color: #888;
+    align-items: center;
+    transition: .3s linear;
+}
+
+.p a:hover{
+    color: #0077e7;
+}
+
+
+
+

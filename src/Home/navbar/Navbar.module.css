@@ -24,7 +24,7 @@
 .logar a{
     text-decoration: none;
     color: #aaa;
-    transition: color 1s ease-in;
+    
 }
 
 .logar a :hover{
@@ -37,5 +37,19 @@
 
 .registro span{
     font-size: 1.5em;
+}
+
+.p_ola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 7em;
+    border-radius: 5px;
+    background-color: rgb(243, 158, 0);
+}
+
+.ola {
+     color: white;
 }
 

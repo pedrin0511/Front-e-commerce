@@ -1,95 +1,94 @@
-body{
-    background: linear-gradient(to right, #fd6b46, #f89b55);
+.body {
+    background-image: url('../image/delicious-caramelized-onion-burger-on-transparent-background-png.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+    padding: 1em; /* Adiciona padding para garantir espaçamento em telas pequenas */
 }
 
 .container{
-    background: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Desfoque para criar o efeito de vidro */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores antigos */
-    border-radius: 15px; /* Bordas arredondadas */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
-    padding: 20px; /* Espaçamento interno */
-    width: 80%; /* Largura máxima */
-    margin: auto; /* Centraliza o container */
-    color: #fff; /* Cor do texto */
-    height: 85vh;
-    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(255, 154, 3, 0.1);
+    width: 80%;
+    max-width: 400px; /* Limita a largura máxima do container */
+    color: #fff;
+    padding: 2em; /* Adiciona espaçamento interno */
     text-align: center;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    margin: 1em;
 }
 
-.voltar{
-    display: flex;
-    margin-top: 1em;
+.container a {
+    color: black;
+    font-size: 1.1em;
+    text-decoration: none;
 }
-.voltar a{
+
+.voltar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1em; /* Adiciona espaçamento inferior */
+}
+
+.voltar a {
     font-size: 2em;
     color: #fff;
     transform: rotate(0deg);
     transition: transform 0.5s ease-in-out;
 }
+
 .voltar a:hover {
-    transform: rotate(360deg); /* Gira o link completamente ao passar o mouse */
+    transform: rotate(360deg);
 }
 
-.container img{
+.container img {
     width: 6em;
     border-radius: 1em;
 }
 
-.icon span{
-    font-size: 2em;
-    
-}
-
-.icon h2{
-    padding: 0;
-    margin: 0;
-}
-
-.container form{
+.container form {
     margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
 }
 
-
-
-.input{
-    width: 15em;
+.input {
+    width: 100%; /* O input ocupa 100% do espaço disponível */
+    max-width: 300px; /* Define uma largura máxima */
     display: flex;
     border-bottom: 2px solid #fff;
     height: 2em;
 }
 
-.input span{
+.input span {
     margin-right: 0.5em;
     font-size: 1.5em;
     margin-left: .2em;
 }
 
-.input input{
+.input input {
     background-color: transparent;
     border: none;
     color: rgb(255, 255, 255);
     font-size: 1.3em;
+    width: 100%; /* Input ocupa todo o espaço disponível */
 }
 
-.input input::placeholder{
+.input input::placeholder {
     color: #fff;
 }
 
-.input input:focus{
-    border: none;
-    outline: none;
-}
-
-.ver button{
+.ver button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -98,14 +97,15 @@ body{
     cursor: pointer;
 }
 
-.entrar{
+.entrar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.entrar button{
-    width: 15em;
+.entrar button {
+    width: 100%;
+    max-width: 300px; /* Limita o botão a uma largura máxima */
     height: 2.5em;
     border-radius: .5em;
     background-color: #f35e38;
@@ -116,35 +116,85 @@ body{
     transition: .5s linear;
 }
 
-.entrar button:hover{
+.entrar button:hover {
     background-color: #a74228;
 }
 
 .container p {
     font-size: 1.2em;
-} 
+    margin-top: 1em; /* Adiciona espaçamento acima do parágrafo */
+}
 
-
-
-  @media (max-width: 400px) {
- 
-    
-    .entrar button{
-        width: 10em;
-        height: 2em;
-    }
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
   
+  /* Estilo para mensagens de sucesso */
+  .success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  /* Estilo para mensagens de erro */
+  .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 70%;
+        max-width: 600px;
+        padding: 3em;
+        height: auto;
+        font-size: 1.3em;
+    }
+
+    .container img{
+        width: 8em;
+    }
+    .input {
+        width: 30em; /* Aumenta o tamanho dos inputs */
+        font-size: 1.2em; /* Aumenta o tamanho da fonte dos inputs */
+    }
+
+    .input input {
+        font-size: 1.2em; /* Aumenta o tamanho da fonte dentro dos inputs */
+    }
+
+    .entrar button {
+        width: 22em; /* Aumenta o tamanho do botão */
+        height: 3em; /* Aumenta a altura do botão */
+        font-size: 1.2em; /* Aumenta o tamanho da fonte do botão */
+    }
+}
+ 
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .input {
+        max-width: 200px;
+    }
+
+    .entrar button {
+        max-width: 200px;
+    }
+
+    .voltar a {
+        font-size: 1.5em; /* Reduz o tamanho do ícone "voltar" */
+    }
+
     .container p {
         font-size: 1em;
-    } 
-    .input{
-        width: 10em;
-        
     }
-    
-    .input input{
-        font-size: 1em;
-        width: 9em;
-    }
-
-  }
+}

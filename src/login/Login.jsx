@@ -60,7 +60,11 @@ function Login(){
     
     
     return(
+        <div className={styles.body}>
+
+        
         <div className={styles.container}>
+            
             {message && (
         <div className={`${styles.message} ${messageType === 'success' ? styles.success : styles.error}`}>
           {message}
@@ -106,6 +110,7 @@ function Login(){
                      </div>
             </form>
             <p>Caso não tenha uma conta <Link to="/register">registre-se!</Link></p>
+        </div>
         </div>
     )
 }
