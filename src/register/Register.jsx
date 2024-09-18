@@ -83,6 +83,7 @@ function Register() {
             </div>
         <form onSubmit={handleSignUp}>
             <h2>Registrar</h2>
+
           <div className={styles.input}>
             <span><IoMdPerson /></span>
           <input

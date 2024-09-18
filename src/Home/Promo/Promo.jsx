@@ -1,6 +1,6 @@
 
-import gifPc from '../../image/White Minimalist Profile LinkedIn Banner.gif';
-import gifMobile from '../../image/Dia do hambúrguer promoção fotográfico marrom laranja post do instagram.png'
+import gifPc from '../../image/bannerPc.gif';
+import gifMobile from '../../image/bannerMobile.gif'
 import styles from './Promo.module.css'
 export function Promo() {
     return (

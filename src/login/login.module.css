@@ -1,29 +1,32 @@
 .body {
-    background-image: url('../image/delicious-caramelized-onion-burger-on-transparent-background-png.webp');
+    background-image: url('../image/hamburgeurfundo.webp');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center; /* Centraliza verticalmente */
-    height: 100vh;
+    height: 90vh;
     padding: 1em; /* Adiciona padding para garantir espaçamento em telas pequenas */
 }
 
 .container{
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(13px);
-    -webkit-backdrop-filter: blur(13px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(255, 154, 3, 0.1);
-    width: 80%;
-    max-width: 400px; /* Limita a largura máxima do container */
-    color: #fff;
-    padding: 2em; /* Adiciona espaçamento interno */
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
+    backdrop-filter: blur(13px); /* Desfoque para criar o efeito de vidro */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade com navegadores antigos */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    padding: 20px; /* Espaçamento interno */
+    width: 80%; /* Largura máxima */
+    margin: auto; /* Centraliza o container */
+    color: #fff; /* Cor do texto */
+    height: auto;
+    margin-top: 1em;
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    margin: 1em;
+   
 }
 
 .container a {
@@ -55,7 +58,7 @@
 }
 
 .container form {
-    margin-top: 3em;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,8 +66,7 @@
 }
 
 .input {
-    width: 100%; /* O input ocupa 100% do espaço disponível */
-    max-width: 300px; /* Define uma largura máxima */
+    width: 80%; /* O input ocupa 100% do espaço disponível */
     display: flex;
     border-bottom: 2px solid #fff;
     height: 2em;
@@ -82,6 +84,10 @@
     color: rgb(255, 255, 255);
     font-size: 1.3em;
     width: 100%; /* Input ocupa todo o espaço disponível */
+}
+.input input:focus{
+    border: none;
+    outline: none;
 }
 
 .input input::placeholder {
@@ -160,7 +166,6 @@
         width: 8em;
     }
     .input {
-        width: 30em; /* Aumenta o tamanho dos inputs */
         font-size: 1.2em; /* Aumenta o tamanho da fonte dos inputs */
     }
 
@@ -182,9 +187,6 @@
         padding: 1em;
     }
 
-    .input {
-        max-width: 200px;
-    }
 
     .entrar button {
         max-width: 200px;
