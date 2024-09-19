@@ -70,8 +70,10 @@ input[type="search"]::-moz-search-cancel-button {
 .resultado_pesquisa li{
     list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.1em;
+    margin-top: 1em;
 }
 
 .resultado_pesquisa a{
@@ -80,5 +82,9 @@ input[type="search"]::-moz-search-cancel-button {
 }
 .resultado_pesquisa img{
     border-radius: 5px;
+    width: 5em;
     
 }
+
+
+

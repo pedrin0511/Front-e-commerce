@@ -1,8 +1,8 @@
 .nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff; /* Cor de fundo da navbar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.753); /* Sombra suave */
+    display: none;
+    justify-content: end;
+    background-color: #f0f0f0; /* Cor de fundo da navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
     padding: 10px 20px; /* Espaçamento interno */
     border-bottom: 1px solid #e0e0e0;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .img img{
-    width: 5em;
+    width: 4em;
     margin: .5em;
     border-radius: 0.5em;
 }
@@ -53,29 +53,25 @@
      color: white;
 }
 
-@media(max-width: 608px){
-    .logar{
-        gap: 1em;
-        margin-right: 0;
-    }
-    .logar a{
-        font-size: 13px;
-    }
-}
+
 
 @media(max-width: 510px){
-
     .nav{
-        
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        height: 4em; 
     }
-    .img {
-        display: none;
-    }
+
     .logar{
-        display: none;        
+        align-items: center;
+        text-align: center;  
     }
     .ola{
-        display: none;
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;  
     }
+    
 }

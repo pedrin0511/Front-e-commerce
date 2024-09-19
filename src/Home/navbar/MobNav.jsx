@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Config } from "../Confi/config";
-import styles from './Navbar.module.css'
+import styles from './MobNav.module.css'
 import { IoLogInOutline,IoPersonAdd } from "react-icons/io5";
 import { Pesquisa } from "./Pesquisa/Pesquisa";
 
 
-export function Navbar(){
+export function MobNav(){
 const [user , setUser] = useState(null)
 
  useEffect(() => {
@@ -22,11 +22,9 @@ const [user , setUser] = useState(null)
         <div >
             {user ? (
                <nav className={styles.nav}>
-                <div className={styles.img}>
+                 <div className={styles.img}>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2UtNT8bHaNnYB3nZ4hq7mgIaN9d2brEM1WA&s" alt="Logo marca" />
                 </div>
-                
-                 <Pesquisa/>
                 <div className={styles.ola}>
                     <p className={styles.p_ola}>Olá, <span>{user.displayName ? user.displayName : "Usuario"}</span></p>
                     <Config/>
@@ -36,14 +34,10 @@ const [user , setUser] = useState(null)
             ): (
                 <nav className={styles.nav}>
                     
-                   <div className={styles.img}>
+                    <div className={styles.logar}>
+                    <div className={styles.img}>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2UtNT8bHaNnYB3nZ4hq7mgIaN9d2brEM1WA&s" alt="Logo marca" />
                 </div>
-                    <Pesquisa/>
-
-
-                    <div className={styles.logar}>
-
                         <Link to="/register">
                         <div className={styles.registro}>
                             <span><IoPersonAdd/></span>

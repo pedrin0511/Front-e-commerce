@@ -41,7 +41,6 @@ export function Pesquisa(){
     return(
         <div>
              <div className={styles.searchContainer}>
-            <form action="">
                 <div className={styles.searchBox}>
                     <input type="text"
                      name="text"
@@ -55,10 +54,8 @@ export function Pesquisa(){
                     <button className={styles.searchBtn} >
                         <FaSearch className={styles.searchIcon}/> 
                     </button>
-                   
-                   
                 </div>
-            </form>
+            
             
         </div>
         {pesquisa &&
@@ -72,13 +69,13 @@ export function Pesquisa(){
                 >
            <li>
             {item.name}
-           
+           <div>
            {item.imageUrl ? (
           <img src={item.imageUrl} alt={item.name} />
         ) : (
           <p>Carregando...</p>  
         )}
-       
+           </div>
            </li>
            </Link>
             ))}
