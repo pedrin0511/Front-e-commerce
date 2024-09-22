@@ -1,13 +1,17 @@
 .container{
     background-color: rgb(255, 255, 255);
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    margin-top: 2em;
     position: absolute;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 1.3em;
+}
+.container button{
+    cursor: pointer;
 }
 
 .view{
@@ -16,8 +20,15 @@
     width: 80%;
     border-radius: 1em;
 }
+
+.produto{
+    display: flex;
+    justify-content: center;
+    
+}
 .view img{
-    width: 20em;
+    width: 30em;
+    margin-top: 1em;
 }
 .info{
     margin-left: 1em;
@@ -37,5 +48,271 @@
 .voltar{
     position: absolute;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    margin: 1em;
 }
+
+.voltar a{
+    color: #777;
+}
+
+.container_Opc{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 1em
+}
+
+.h1_Obs{
+    font-size: 1.3em;
+    display: flex;
+    gap: 1em;
+ align-items: center;
+ margin-top: -1em;
+ color: #777;
+}
+
+
+.textarea textarea{
+    border-radius: 0.5em;
+    height: 9em;
+    width: 25em;
+    resize: none;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: #888;
+    font-size: 1.1em;
+}
+
+.entrega{
+    border: 1px solid #15ff0093;
+    width: 50%;
+    height: 12em;
+    border-radius: .5em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.137);
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.button_delivery{
+    display: flex;
+    justify-content: center;
+    background-color: #00e413; /* Cor padrão do botão iOS */
+    color: white;
+    font-size: 16px;
+    gap: 1em;
+    padding: 12px 24px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Sombra leve para profundidade */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+.button_delivery:hover {
+    background-color: #00b500; /* Cor mais escura no hover */
+}
+
+.button_retirada{
+    display: flex;
+    justify-content: center;
+    background-color: #0384fd; /* Cor padrão do botão iOS */
+    color: white;
+    font-size: 16px;
+    gap: 1em;
+    padding: 12px 24px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Sombra leve para profundidade */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.button_retirada:hover {
+    background-color: #004eb5; 
+}
+
+.button_addendereco{
+    margin-top: 1em;
+    height: 2.3em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.39);
+
+}
+
+.retirada_endereco{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+
+}
+
+
+.container_Add {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    height: 5em;
+    margin-top: 4em;
+    background-color: #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.308);
+  }
+  
+  .quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .quantidade button {
+    background-color: #ffffff;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50%;
+    width: 1.5em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+  }
+  
+  .quantidade button:hover {
+    background-color: #aaaaaa;
+  }
+  
+  .quantidade p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .adicionar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .adicionar button {
+    background-color: #007add;
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 3em;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adicionar button:hover {
+    background-color: #003e9b;
+  }
+  
+  .adicionar p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  @media(max-width: 1100px){
+   .view img{
+    width: 80%;
+   }
+   
+    .produto{
+        display: block;
+    }
+    .container_Opc{
+        display: block;
+        justify-content: center;
+    }
+    .h1_Obs{
+        margin-left: 4%;
+    }
+    .textarea textarea{
+        font-size: 1.3em;
+        display: block;
+        margin-left: 4%;
+        width: 80%;
+    }
+    .container_Add{
+        width: 80%;
+        margin-left: 4%;
+    }
+    .quantidade{
+        font-size: 1.2em;
+    }
+    .adicionar button{
+        font-size: 1.2em;
+    }
+    .adicionar p{
+        font-size: 1.1em;
+    }
+  }
+  @media(max-width: 620px){
+    
+    .voltar{
+        margin: .5em;
+        font-size: 1.5em;
+       }
+
+    .view{
+        width: 95%;
+        margin-top: 0em;
+    }
+    .container_Add{
+        width: 80%;
+        margin-left: 4%;
+        margin-top: 1.5em;
+        
+        
+    }
+    .quantidade{
+        font-size: 1em;
+        display: block;
+    }
+
+    .quantidade p {
+        margin: 2px 0 2px 0;
+    }
+    .adicionar button{
+        font-size: 1em;
+        width: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .adicionar p{
+        font-size: 1em;
+    }
+  }
+  @media(max-width: 350px){
+   
+   
+    .view h1{
+font-size: 1.4em;
+   }
+   
+    .adicionar{
+        display: block;
+    }
+    .adicionar button{
+        margin-bottom: .5em;
+    }
+    
+  }

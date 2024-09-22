@@ -8,6 +8,7 @@ import { Home } from './Home/Home';
 import Register from './register/Register';
 import Login from './login/Login';
 import { View } from './Home/ViewProduct/View';
+import { Car } from './Home/Car/Car';
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/View",
         element: <View/>
+      },
+      {
+        path: "/Car",
+        element: <Car/>
       }
     ]
   }
